@@ -8,26 +8,27 @@
 </head>
 <body>
     <main>
-        <div class="pantalla">
+        <div class="pantalla" id="pantalla">
             Esto es un div con numeros como 1234567
         </div>
         <div class="botones">
-            <button class="numero" id="numero">1</button>
-            <button class="numero" id="numero">2</button>
-            <button class="numero" id="numero">3</button>
-            <button class="numero" id="numero">X</button>
-            <button class="numero" id="numero">4</button>
-            <button class="numero" id="numero">5</button>
-            <button class="numero" id="numero">6</button>
-            <button class="numero" id="numero">/</button>
-            <button class="numero" id="numero">7</button>
-            <button class="numero" id="numero">8</button>
-            <button class="numero" id="numero">9</button>
-            <button class="numero" id="numero">+</button>
+            <button class="numero" onclick="agregarNumero('1')" id="numero1">1</button>
+            <button class="numero" onclick="agregarNumero('2')" id="numero2">2</button>
+            <button class="numero" onclick="agregarNumero('3')" id="numero3">3</button>
+            <button class="numero" onclick="agregarOperador('*')" id="operadorx">X</button>
+            <button class="numero" onclick="agregarNumero('4')" id="numero4">4</button>
+            <button class="numero" onclick="agregarNumero('5')" id="numero5">5</button>
+            <button class="numero" onclick="agregarNumero('6')" id="numero6">6</button>
+            <button class="numero" onclick="agregarOperador('/')" id="operador/">/</button>
+            <button class="numero" onclick="agregarNumero('7')" id="numero7">7</button>
+            <button class="numero" onclick="agregarNumero('8')" id="numero8">8</button>
+            <button class="numero" onclick="agregarNumero('9')" id="numero9">9</button>
+            <button class="numero" onclick="agregarOperador('+')" id="operador+">+</button>
         </div>
         <div class="igual">
-            <button class="btn_igual">=</button>
+            <button class="btn_igual" onclick="calcular()">=</button>
         </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
